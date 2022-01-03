@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: tom-cat
+spec:
+ containers:
+ - name: tomcat-cat
+   image: tomcat:8.0
+   ports:
+    - containerPort: 7500
