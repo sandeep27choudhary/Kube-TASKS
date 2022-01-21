@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mongo-express
 spec:
-  replicas: 1
+  replicas: {{ .Values.deployment.spec.replicas }}
   selector:
     matchLabels:
       app: mongo-express
