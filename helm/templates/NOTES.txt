@@ -1,0 +1,7 @@
+Thank you for installing {{ .Chart.Name }}.
+
+Your release is named {{ .Release.Name }}.
+You can access the app on on port 30000
+ try:
+  $minikube service mongo-express-service
+
