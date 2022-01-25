@@ -5,8 +5,8 @@ deployment:
     spec:
       replicas: "2"
     secret:
-      username: "admin"
-      password: "password"
+      username: "admin1"
+      password: "password1"
 
   mongoExpress:
     image: "mongo-express"
