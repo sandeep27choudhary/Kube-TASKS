@@ -1,8 +1,21 @@
 deployment:
-  image: "mongo"
-  spec:
-    replicas: "2"
-  secret:
-    username: "admin"
-    password: "password"
+
+  mongodb:
+    image: "mongo"
+    spec:
+      replicas: "2"
+    secret:
+      username: "admin"
+      password: "password"
+
+  mongoExpress:
+    image: "mongo-express"
+    spec:
+      port:
+        containerPort: 8081
+      type: "LoadBalancer"
+      nodePort: "30000"
+      replicas: "2"
+      resources: "{}"
+  
 name: mongo-app1
